@@ -98,6 +98,22 @@ body {
 /***** Sidebar CSS End *****/
 
 
+/***** Footer CSS Start *****/
+.footer {
+	background: #ffffff; 
+	border-top: 4px solid #75705E;
+}
+.footer p {
+	font-size: 12px;
+	margin: 5px 10px;
+}
+.footer img {
+	margin: 5px 0px 0px 2px;
+}
+/***** Footer CSS End *****/
+
+
+
 /***** Main Container CSS Start *****/
 .container {
 	width:75%; 
