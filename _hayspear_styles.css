@@ -3,9 +3,33 @@
 body {
 	margin:0px;
 	font-family: arial,sans serif;
+	background: #ffffff;
+}
+#appView {
 	background: #000000;
 }
-/***** General CSS Start *****/
+/***** General CSS End *****/
+
+
+/***** appPreview CSS End *****/
+#appPreView {
+    background: url("images/logo_bg.gif") repeat-x scroll center bottom #BC4902;
+    border: 1px solid #000000;
+    border-radius: 15px 15px 15px 15px;
+    margin: 10px auto;
+    min-height: 200px;
+    width: 500px;
+}
+
+#appPreView .logo {
+    display: block;
+    margin: 0 auto;
+}
+#loader {
+    margin-top: 17px;
+    text-align: center;
+}
+/***** appPreview CSS End *****/
 
 
 /***** Header CSS Start *****/

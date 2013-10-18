@@ -70,26 +70,16 @@ app.u.loadScript(app.vars.baseURL+"app-quickstart-init.js");
 
 <!-- what is displayed onLoad until the view is loaded -->
 <div id='appPreView'>
-<table>
-<tr>
-	<td><!-- put logo here --></td>
-	<td>
-
+	<img class="logo" src="images/hayspear_logo_cw_300x80.gif" alt="Hayspear" title="Hayspear"/>
 	<div id="loader">
 		<h3>One moment please.</h3>
-
-		<div class='alignCenter'>
 		<progress id="appPreViewProgressBar" max="100" value="0"></progress><br>
-		</div>
 		<div id='appPreViewProgressText'>0% Complete</div>
 	</div>
 	<div id="clickToLoad" class="displayNone pointer">
 		Click here to load your shopping experience!
 	</div>
 	<div class='appMessaging'></div>
-	</td>
-</tr>
-</table>
 </div>
 
 
@@ -117,7 +107,7 @@ app.u.loadScript(app.vars.baseURL+"app-quickstart-init.js");
 		<div class="floatLeft">
 			<img src="images/truck.jpg"/>
 			<a href="#" onClick="return showContent('category',{'navcat' : '.'});">
-				<img src="images/hayspear_logo_cw_300x80.gif" alt="Hayspear" title="Hayspear"/>
+				<img class="logo" src="images/hayspear_logo_cw_300x80.gif" alt="Hayspear" title="Hayspear"/>
 			</a>
 			<div class="phonePaymentSection">
 				<h4>Contact Us: 800 283 7107</h4>
