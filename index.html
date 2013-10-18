@@ -129,31 +129,41 @@ app.u.loadScript(app.vars.baseURL+"app-quickstart-init.js");
 		</div>
 	</div>
 </div>
-<!--
-ANIMATION TESTING
-<div style="background: black; float: left;">
-	<div data-animation-mouseenter="cogs?animFunc=fwd" data-animation-mouseout="cogs?animFunc=back" style="width: 55px; height: 55px;" id="cogs"></div>
+
+<div class="sideBar">
+	<div class="sideBarCategories">
+		<form name='headerSearchFrm' action='#' class='productSearchForm' method="get" id="searchFunc">
+			<input type='search' name='KEYWORDS' class="productSearchKeyword handleDefault" placeholder="Search" id="searchBar"/>
+			<input class="search searchBtn pointer" type="submit" value="Go" id="searchButton" />
+		</form>
+		<ul id="tier1categories"></ul>
+		<img src="images/hs_left_skd_steer-219x219.gif"/>
+	</div>
+	<div class="sideBarImages">
+		<img src="images/usflag.gif"/>
+		<img src="images/bbb_hor-115x50.gif"/>
+		<img src="images/logo_72dpi_100_200j.jpg"/>
+		<img src="images/sc.gif"/>
+		<img src="images/paypal_logo.gif"/>
+		<img src="images/ebaypowerseller_small.gif"/>
+		<img src="images/p3.gif"/>
+		<img src="images/generic-ssl-secure.gif"/>
+		<img src="images/ups.gif"/>
+		<img src="images/internetsafeseal.jpg"/>
+	</div>
 </div>
--->
+<div class="container">
+	<div id='globalMessaging' class='appMessaging'></div><!-- DO NOT REMOVE - used for some high level error handling (usually appears below breadcrumb nav or top bar) -->
 
+	<!-- These add specific functionality for the app. In most cases, you want to leave them alone. -->
+	<div id='appNav'>
+		<button class='displayNone prodDetailNextItemButton' data-app-role='prodDetailNextItemButton'>Next</button>
+		<button class='displayNone prodDetailPrevItemButton' data-app-role='prodDetailPrevItemButton'>Previous</button>
+	</div>
 
-<!-- VIEW CONTENT -->
-<!-- leave the appView div, put your your html here ...  -->
-
-	<!--
-	** REMINDER : DO NOT PUT ANY GRAPHICS/CONTENT THAT SHOULD NOT APPEAR ON EVERY PAGE IN THE VIEW (HERE)
-	**				  INSTEAD PUT THEM INTO <div id="homepageTemplate"></div>
-	-->
-	
-<div id='globalMessaging' class='appMessaging'></div><!-- DO NOT REMOVE - used for some high level error handling (usually appears below breadcrumb nav or top bar) -->
-
-<!-- These add specific functionality for the app. In most cases, you want to leave them alone. -->
-<div id='appNav'>
-	<button class='displayNone prodDetailNextItemButton' data-app-role='prodDetailNextItemButton'>Next</button>
-	<button class='displayNone prodDetailPrevItemButton' data-app-role='prodDetailPrevItemButton'>Previous</button>
-</div>
-
-<div id='mainContentArea'></div><!-- DO NOT REMOVE - this is where the specific page (ex: homepage, product, category) content is going to go -->
+	<div id='mainContentArea'></div><!-- DO NOT REMOVE - this is where the specific page (ex: homepage, product, category) content is going to go -->
+	<div class="clear"></div>
+</div>	
 
 <!-- ... your html ends -->
 <!-- /VIEW CONTENT -->
@@ -269,7 +279,6 @@ don't modify the 'data-templateid' unless you are changing template names and up
 
 <li id='categoryListTemplateRootCats'>
 	<div onClick="showContent('category',{'navcat':$(this).parent().attr('data-catsafeid')});" class='pointer'>
-		<div class='thumbContainer'><img src='blank.gif' class='catThumb' alt='' data-bind='var: category(%meta.CAT_THUMB); format:imageURL;' width='35' height='35' /></div>
 		<div class='catName'><span data-bind='var: category(pretty); format:catText; extension: myRIA;'></span></div>
 	</div>
 </li>

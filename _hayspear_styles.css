@@ -3,6 +3,7 @@
 body {
 	margin:0px;
 	font-family: arial,sans serif;
+	background: #000000;
 }
 /***** General CSS Start *****/
 
@@ -41,3 +42,67 @@ body {
 }
 .phonePaymentSection h4 {margin: 5px 0px;}
 /***** Header CSS End *****/
+
+
+/***** Sidebar CSS Start *****/
+.sideBar {
+	width:25%;
+	height: 100%; 
+	background: url("images/left_bg.gif") repeat-y scroll right top #000000;
+	float:left;
+ }
+ 
+ .productSearchForm {
+	padding: 15px 11px 0px;
+    width: 225px;
+}
+.productSearchKeyword {
+	border-left: 2px solid #75705E;
+	border-top: 3px solid #75705E;
+	width: 165px;
+}
+.searchBtn {
+    background: none repeat scroll 0 0 #75705E;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 2px 8px;
+}
+.sideBarCategories {
+	background: #E46F02; 
+	color: #ffffff;
+	border-radius: 20px 0px 20px 20px;
+	margin-left: 6px;
+}
+.sideBarCategories ul {
+	padding: 6px;
+	margin: 0px;
+}
+.sideBarCategories  li{ 
+	list-style: none;
+	padding: 3px 0;
+	font-size: 13px;
+	font-weight: bold;
+}
+.sideBarCategories  li:hover{
+	color: #000000;
+ }
+ .sideBarCategories img {
+	margin:15px auto;
+	display: block;
+ }
+ .sideBarImages img {
+	margin:15px auto;
+	display: block;
+ }
+/***** Sidebar CSS End *****/
+
+
+/***** Main Container CSS Start *****/
+.container {
+	width:75%; 
+	float:right;
+	background: #ffffff;
+}
+/***** Main Container CSS End *****/
+
