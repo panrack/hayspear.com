@@ -96,6 +96,39 @@ app.u.loadScript(app.vars.baseURL+"app-quickstart-init.js");
 
 <div id='appView' class='displayNone'>
 
+<!-- Header -->
+<div class="header">
+	<div class="topMenu">
+		<ul class="floatLeft">
+			<li><a>Home</a></li>
+			<li><a>Company Information</a></li>
+			<li><a>Contact</a></li>
+			<li><a>Sign In</a></li>
+			<li><a>View Cart</a></li>
+			<li><a>Informational Links</a></li>
+			<li><a>Printer-Friendly Catalog</a></li>
+		</ul>
+		<a class="floatRight cartSection" onClick="return showContent('cart',{});" class='pointer'>
+			<span class="cartText">Shopping Cart:</span>
+			<span class="cartItemCount"></span> Items in cart
+		</a>
+	</div>
+	<div class="logoSection clearfix">
+		<div class="floatLeft">
+			<img src="images/truck.jpg"/>
+			<a href="#" onClick="return showContent('category',{'navcat' : '.'});">
+				<img src="images/hayspear_logo_cw_300x80.gif" alt="Hayspear" title="Hayspear"/>
+			</a>
+			<div class="phonePaymentSection">
+				<h4>Contact Us: 800 283 7107</h4>
+				<img src="images/hs_payment_header2-250x21.gif"/>
+			</div>
+		</div>
+		<div class="floatRight">
+			<img src="images/tractor.jpg"/>
+		</div>
+	</div>
+</div>
 <!--
 ANIMATION TESTING
 <div style="background: black; float: left;">

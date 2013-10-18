@@ -1,0 +1,43 @@
+/***** General CSS Start *****/
+.clear {clear: both;}
+body {
+	margin:0px;
+	font-family: arial,sans serif;
+}
+/***** General CSS Start *****/
+
+
+/***** Header CSS Start *****/
+.topMenu {
+	background: #000000; 
+	color:#ffffff; 
+	font-size: 11px; 
+	font-weight: bold; 
+	line-height: 20px; 
+	height: 20px;
+}
+.topMenu ul {
+	margin: 0px; 
+	padding: 0px;
+}
+.topMenu li {
+	display: inline; 
+	padding: 0px 6px;
+}
+.topMenu a:hover {
+	color:#e46F02; 
+	text-decoration: underline;
+}
+.cartSection {padding-right: 10px;}
+.cartText:hover {color: #ffffff;}
+
+.logoSection {
+	background: url(images/logo_bg.gif) repeat-x; 
+	height:76px;
+}
+.phonePaymentSection {
+	float:right; 
+	margin-left:6px;
+}
+.phonePaymentSection h4 {margin: 5px 0px;}
+/***** Header CSS End *****/
