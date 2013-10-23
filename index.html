@@ -215,8 +215,23 @@ COMMONLY EDITED TEMPLATES
 the homepageTemplate template is loaded into mainContentArea by default when the application loads
 -->
 <div id='homepageTemplate' class='homeTemplate'>
-	<h3>Hay Farm Equipment and Attachments</h3>
-	<ul data-bind="var: category(@products); format: productList; editor: finder; extension: store_prodlist; loadsTemplate: productListTemplate; withReviews:1;" class='listStyleNone fluidList clearfix noPadOrMargin productList'></ul>
+	<h3 class="pageTitleGrayBG">Hay Farm Equipment and Attachments</h3>
+	<div class="contentSection">
+		<h5 class="marginTop">Washburn Farm & Home Supply can fabricate a heavy duty hay mover carrier or quick attach adapter to suit your needs economically.</h5>
+		<ul>
+			<li>A family owned business since 1976 our 37th year.</li>
+			<li>Here are our some of our basic standard models that we keep in stock Lamar, Mo 64759. USA. Call us at 800 283 7107 or 417 682 5551 for a live knowledgeable person the first time with questions or orders! Washburn's easily builds to suit your particular needs. info@hayspear.com 24/7. Glad to help!</li>
+			<li>Washburn's has individual hay bale spear- hay bale mover-hay bale stacker-skidsteer and bobcat hay attachments as well as pickup truck hay mover & pickup truck hydraulic hay movers. Ranchers See our heavy duty spring loaded self locking corral gate latch and striker plate</li>
+		</ul>
+		<p>Schematic Diagrams to be filled out to fit your loader or skidsteer</p>
+		<ul> 
+			<li><a href="http://static.zoovy.com/merchant/panrack/Washburn_Pin-On_Worksheet2.pdf" target="_blank">NEW Pin-on Loader Specification Schematic Drawing for lift arms and cylinder hookup plates where bucket tilt cylinders are directly above the lift arms</a></li>
+			<li><a href="http://static.zoovy.com/merchant/panrack/SCHEMATIC_CYLINDER_ABOVE_BOOM_WITH_BUSHINGS_VERSION_1.pdf" target="_blank">NEW Pin-on Loader Specification Schematic Drawing for tilt cylinder directly above lift arm. Complete Ver, 1.</a></li>
+			<li><a href="http://static.zoovy.com/merchant/panrack/mustang_940E_dimensions_blanked_rev_A.pdf" target="_blank">Schematic drawing for tractors & older skidsteers with bucket tilt cylinders located inside of the lift arms to convert to standardized skidsteer quick attach</a></li>
+			<li><a href="http://static.zoovy.com/merchant/panrack/6_plate_loader__brackets.pdf" target="_blank">6 plate schematic diagram for loaders with single center tilt cylinder to convert to skid steer or Euro 8 Global or other configuration n</a></li>
+		</ul>
+		<ul data-bind="var: category(@products); format: productList; editor: finder; extension: store_prodlist; loadsTemplate: productListTemplate; withReviews:1;" class='listStyleNone fluidList clearfix noPadOrMargin productList'></ul>
+	</div>
 <!-- a sample of how to format an elastic native search in a data-bind -->
 <!--
 	<ul id='homeProdSearchBestSellers' data-bind='var: elastic-native({"size":"4","mode":"elastic-native","filter":{"term":{"tags":"IS_BESTSELLER"}}}); format: productSearch; extension: myRIA; loadsTemplate: productListTemplateResultsNoPreview; before:<h2>Best Sellers</h2>;' class='listStyleNone fluidList clearfix noPadOrMargin productList'></ul>

@@ -147,5 +147,43 @@ body {
     margin-top: 5px;
 }
 #mainContentArea p {margin:0px;}
+.pageTitleGrayBG{
+    background: none repeat scroll 0 0 #75705E;
+    border-radius: 18px 0 0 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 23px;
+    padding-left: 24px;
+}
+.contentSection {
+	padding: 5px;
+}
+.contentSection  ul,p{
+	font-size: 12px;
+}
+.contentSection ul a {
+	color: #922618;
+}
+.contentSection ul a:hover {
+	color: #000000;
+}
 /***** Main Container CSS End *****/
+
+
+/***** Homepage CSS Start *****/
+#mainContentArea .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: none repeat scroll 0 0 #F68924;
+    border: 1px solid #922618;
+    color: #922618;
+}
+#mainContentArea .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: #922618;
+}
+#mainContentArea .ui-widget-content{
+    background: none repeat scroll 0 0 #F68924;
+	border: 1px solid #922618;
+    color: #922618;
+}
+/***** Homepage CSS End *****/
+
 
