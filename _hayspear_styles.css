@@ -186,4 +186,13 @@ body {
 }
 /***** Homepage CSS End *****/
 
+/***** Product List Template CSS *****/
+#productListTemplate 
+.prodListName {
+color:#922618;
+text-decoration: underline;
+font-size: 12px;
+font-family: arial;
+font-weight: normal;
+}
 
