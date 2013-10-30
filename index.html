@@ -318,18 +318,19 @@ remember to NOT put the button inside the 'onclick' container or two events will
 		<img src='blank.gif' class='prodThumb' alt='' data-bind='var: product(zoovy:prod_image1); format:imageURL;' width='75' height='75' />
 		</div>
 
-		<h5 class="prodListName" data-bind='var: product(zoovy:prod_name); format:text;'></h5>
+		<div class="prodListName" data-bind='var: product(zoovy:prod_name); format:text;'></div>
 
-		<h6 class="prodListPrice" data-bind='var: product(zoovy:base_price); format:money; currencySign: $;  hideZero:true; className:price; pretext: Our Price: ;'></h6>
+		<div class="prodListPrice">Our Price: <b data-bind='var: product(zoovy:base_price); format:money; currencySign: $;  hideZero:true; className:price;'></b></div>
 		
 		<span data-bind='var: reviews(reviews.average); format:addClass; className:review_;' class='reviewSprite'></span>
 <!-- 	<span data-bind='var: reviews(reviews.total); format:text; pretext: from ;posttext: reviews; className:numReviews;'></span> -->
 	</div>
-	
+	<!--
 	<form data-bind='var: product(pid); format:atcForm; extension:store_product;' class='prodViewerAddToCartForm clearfix' action='#' onSubmit="app.ext.myRIA.u.addItemToCart($(this),{'action':'modal'}); return false;">
 		<input type='hidden' name='qty' value='1' />
 		<button data-bind='format:addToCartButton; extension:myRIA; useParentData:true;'>more details</button>
 	</form>
+	-->
 	
 </li>
 

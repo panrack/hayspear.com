@@ -188,7 +188,11 @@ body {
 /***** Homepage CSS End *****/
 
 /***** Product List Template CSS *****/
-#productListTemplate 
+.productList > li {
+    height: 160px;
+    position: relative;
+    width: 30%;
+}
 .prodListName {
 color:#922618;
 text-decoration: underline;
@@ -196,4 +200,6 @@ font-size: 12px;
 font-family: arial;
 font-weight: normal;
 }
-
+.prodListPrice {
+	font-size: 12px;
+}
