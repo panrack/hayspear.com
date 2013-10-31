@@ -89,12 +89,12 @@ app.u.loadScript(app.vars.baseURL+"app-quickstart-init.js");
 <!-- Header -->
 <div class="header">
 	<div class="topMenu">
-		<ul class="floatLeft">
-			<li><a>Home</a></li>
-			<li><a>Company Information</a></li>
-			<li><a>Contact</a></li>
-			<li><a>Sign In</a></li>
-			<li><a>View Cart</a></li>
+		<ul class="floatLeft pointer">
+			<li><a onClick="return showContent('homepage');">Home</a></li>
+			<li><a onClick="return showContent('company',{'show':'about'});">Company Information</a></li>
+			<li><a onClick="return showContent('company',{'show':'contact'});">Contact</a></li>
+			<li><a onClick="return showContent('customer',{'show':'myaccount'});">Sign In</a></li>
+			<li><a onClick="return showContent('cart',{});">View Cart</a></li>
 			<li><a>Informational Links</a></li>
 			<li><a>Printer-Friendly Catalog</a></li>
 		</ul>
