@@ -188,8 +188,12 @@ body {
 /***** Homepage CSS End *****/
 
 /***** Product List Template CSS *****/
+.productList{
+	background: url("images/prodlisttemplate_bg.jpg");
+}
 .productList > li {
-    height: 160px;
+    height: 124px;
+	margin: 0px;
     position: relative;
     width: 30%;
 }
