@@ -174,8 +174,11 @@ body {
 /***** Homepage CSS Start *****/
 #mainContentArea .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
     background: none repeat scroll 0 0 #F68924;
-    border: 1px solid #922618;
+    border: medium none;
+    border-radius: 0 0 0 0;
     color: #922618;
+    height: 34px;
+    line-height: 34px;
 }
 #mainContentArea .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
     color: #922618;
@@ -192,10 +195,11 @@ body {
 	background: url("images/prodlisttemplate_bg.jpg");
 }
 .productList > li {
-    height: 124px;
+    height: 139px;
 	margin: 0px;
+	padding: 0px 10px;
     position: relative;
-    width: 30%;
+    width: 31%;
 }
 .prodListName {
 color:#922618;
