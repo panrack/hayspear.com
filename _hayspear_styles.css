@@ -48,6 +48,7 @@ a {color: #000000;}
 	display: inline; 
 	padding: 0px 6px;
 }
+.topMenu a {color: #ffffff;}
 .topMenu a:hover {
 	color:#e46F02; 
 	text-decoration: underline;
