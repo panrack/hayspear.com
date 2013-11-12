@@ -245,3 +245,12 @@ font-weight: normal;
 	color: #922618;
 }
 /***** Product Page CSS End *****/
+
+
+/***** Category Page CSS Start *****/
+.catPageLongTitle {
+	width: 375px; 
+	margin: 0px auto;
+	text-align: center;
+}
+/***** Category Page CSS End *****/

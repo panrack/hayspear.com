@@ -261,15 +261,22 @@ each of the 'sections' are used to load another template. don't change the id.
 don't modify the 'data-templateid' unless you are changing template names and updating everywhere appropriate.
 -->
 <div id='categoryTemplate' class='loadingBG categoryTemplate'>
-
+	<div data-bind='var: category(%page.page_title); format:hideIfSet;'>
+		<h2 class="pageTitleGrayBG" data-bind='var:category(pretty); format:catText; extension:myRIA;'></h2>
+	</div>
+	<div class="displayNone" data-bind='var: category(%page.page_title); format:showIfSet;'>
+		<h2 class="pageTitleGrayBG" data-bind="var: category(%page.page_title); format: text; editor: text;"></h2>
+	</div>
 <div class="contentSection">
+	
 	<ul class='breadcrumb clearfix noPadOrMargin fluidList' data-bind='var: category(path); format:breadcrumb; extension:store_navcats; loadsTemplate: breadcrumbTemplate;'></ul>
 
-	<img data-bind="var: category(%page.banner1); format: banner; editor: banner; height:250; width:750; extension: myRIA;" src='images/blank.gif' alt='' />
+	<img data-bind="var: category(%page.picture1); format: banner; editor: banner; height:200; width:400; extension: myRIA;" src='images/blank.gif' alt='' />
 
-	<h2 data-bind="var: category(%page.header); format: text; editor: text;"></h2>
+	<h3 class="catPageLongTitle" data-bind="var: category(%page.title); format:wiki; wikiFormats:myRIA; editor: textarea;"></h3>
 
-	<p data-bind="var: category(%page.description); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
+	<p data-bind="var: category(%page.description2); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
+	<p data-bind="var: category(%page.catdesc); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 
 	<ul data-bind="var: category(@subcategoryDetail); format: categoryList; extension: store_navcats; loadsTemplate: categoryListTemplate; detail:max;" class='listStyleNone fluidList clearfix noPadOrMargin categoryList'></ul><!-- outputs a list of subcategories -->
 
