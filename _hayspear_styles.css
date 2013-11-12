@@ -186,9 +186,7 @@ a {color: #000000;}
     color: #922618;
 }
 #mainContentArea .ui-widget-content{
-    background: none repeat scroll 0 0 #F68924;
-	border: 1px solid #922618;
-    color: #922618;
+	display: none;
 }
 /***** Homepage CSS End *****/
 
