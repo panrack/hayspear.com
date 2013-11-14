@@ -95,7 +95,7 @@ app.u.loadScript(app.vars.baseURL+"app-quickstart-init.js");
 			<li><a onClick="return showContent('company',{'show':'contact'});">Contact</a></li>
 			<li><a onClick="return showContent('customer',{'show':'myaccount'});">Sign In</a></li>
 			<li><a onClick="return showContent('cart',{});">View Cart</a></li>
-			<li><a>Informational Links</a></li>
+			<li><a onClick="return showContent('category',{'navcat':'.installation_guides'});">Informational Links</a></li>
 			<li><a>Printer-Friendly Catalog</a></li>
 		</ul>
 		<a class="floatRight cartSection" onClick="return showContent('cart',{});" class='pointer'>
@@ -275,6 +275,7 @@ don't modify the 'data-templateid' unless you are changing template names and up
 
 	<h3 class="catPageLongTitle" data-bind="var: category(%page.title); format:wiki; wikiFormats:myRIA; editor: textarea;"></h3>
 
+	<p data-bind="var: category(%page.description); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 	<p data-bind="var: category(%page.description2); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 	<p data-bind="var: category(%page.catdesc); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 
