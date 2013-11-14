@@ -744,26 +744,41 @@ if you change these, you should move them above this comment so that when you (o
 	<div class='mainColumn'>
 <!-- .textContentArea is used as a selector in quickstart.js because article tag type isn't ie8 friendly -->
 		<div id='aboutArticle' class='textContentArea article'>
-			<h1>About Us</h1>
-			<div data-bind='var: profile(zoovy:about); format:wiki; wikiFormats:myRIA;' id='aboutUsContent'></div>
+			<h1 class="pageTitleGrayBG">Hay spear Hay Moving Equipment Products</h1>
+			<div class="contentSection">
+				<h4>HaySpear.com of Washburn Company</h4>
+				<p>We fabricate all of our unique handmade products in our facility in Lamar, MO 64759 since 1976. Our hay equipment is built to customer request as well as our standard product line. Incidentally Lamar is the Birthplace of president Harry S Truman. Joanne and Alan also employ several expert craftsmen to create a very wide variety of product that we are very proud of and want you to be proud of too. </p>
+				<p>"The Buck Stops Here" As President Truman is Quoted. We do our best to answer your Questions quickly! </p>
+				<p>Not only do we produce a wide variaty of hay moving equipment and our 50 models of standard kitchen pot racks that can be built to suit the size you want, but are glad to custom design a product just for you! </p>
+				<p>Check out our many other products from our:</p>
+				<ul> 
+					<li>Custom built all steel buildings</li>
+					<li>Hay moving equipment </li>
+					<li>My patented under the fence mower called the "Fence Runner" </li>
+					<li>Metal fab & Machine shop </li>
+					<li>Campbell Hausfeld Warranty Center and Parts with A Real Person</li>
+				</ul>
+				<p>We are friendly and helpful. Tell your friends about us! Thanks for your business! Alan & Joanne 800 283 7107</p>
+				<p>Contact us for custom built products too. 800 283 7197 or 417 682 5551. We are friendly and helpful and are glad to build what you might need.</p>
+				<ul class="aboutLinks">
+					<li><a target="_blank" src="http://static---panrack.app-hosted.com/media/merchant/panrack/Map_To_Joannes_Pot_Pan_Lid_and_Spice_Racks_and_Washburn_Farm_and_Home_Supply.pdf">Map to Washburn Company's Joanne's Pot Pan Lid & Spice Rack Facility & Washburn Farm & Home Supply </a></li>
+					<li><a target="_blank" src="http://static---panrack.app-hosted.com/media/merchant/panrack/Hayspear_catalogue_e2.pdf">Hayspear Catalogue for Universal front loader & 3 point combination units, skid steer and bobcat attachments, pickup truck hay bale units </a></li>
+					<li><a target="_blank" src="http://static---panrack.app-hosted.com/media/merchant/panrack/Hayspear_catalogue_e.pdf">Hayspear Catalogue for superior quality spears, loader bucket attachments and 3 point attachments</a></li>
+				</ul>
+			</div>
 		</div>
 
 
 		<div id='contactArticle' class='displayNone textContentArea'>
-			<h1>Contact Information</h1>
-			<form action='#' onSubmit="app.calls.appSendMessage.init($(this).serializeJSON(),{'callback':'showMessaging','parentID':'contactFormMessaging','message':'Thank you, your message has been sent'},'immutable'); app.model.dispatchThis('immutable');  return false;" id='contactForm' name='contactForm'>
-			<fieldset>
-				<legend>Contact Us</legend>
-				<div id='contactFormMessaging'></div>
-				<div><label for='contactFormSender'>Email Address: </label><input type='email' name='sender' required='required' id='contactFormSender' /></div>
-				<div><label for='contactFormSubject'>Subject: </label><input type='text' name='subject' id='contactFormSubject' /></div>
-				<div><label for='contactFormOID'>Order ID: </label><input type='text' name='OID' id='contactFormOID' /></div>
-				<div><label for='contactFormBody'>Message: </label><textarea name='body' required='required' id='contactFormBody'></textarea></div>
-				<div class='alignRight'><input type='submit' class='ui-button-text ui-button ui-state-default ui-corner-all' value='Send Message' />
-				</div>
-			</fieldset>
-			</form>
-			<div data-bind='var: profile(zoovy:contact); format:wiki; wikiFormats:myRIA;' id='contactContent'></div>
+			<h1 class="pageTitleGrayBG">Contact Information</h1>
+			<div class="contentSection">
+				<p>Contact us: 800 283 7107 or 417 682 5551 8-5 M-F central time or fax 417 682 3987 or email <a href="mailto:sales@powerlandonline.com" title="Email Us">info@hayspear.com</a> 24/7</p>
+				<p>If you'd like to check the status of an order, (or cancel one that hasn't been processed), please go to the <a href="#" onClick="return showContent('customer',{'show':'myaccount'});">customer account page</a>. You can also <a href="#" onClick="return showContent('customer',{'show':'newsletter'});">subscribe to our mailing list</a>. We are located 2 miles north of JCT hwy 60 & East outer road of 71 Hwy or 2 miles north of the Super 8 Lamar MO 64759.</p>
+				<p>Mail To:</p>
+				<p class="addressLine">Washburn Farm & Home</p>
+				<p class="addressLine">172 NE 1st LN</p>
+				<p class="addressLine">Lamar, MO 64759</p>
+			</div>
 		</div>
 
 

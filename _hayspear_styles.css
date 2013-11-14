@@ -163,10 +163,11 @@ a {color: #000000;}
 .contentSection  ul,p{
 	font-size: 12px;
 }
-.contentSection ul a {
+
+#mainContentArea a{
 	color: #922618;
 }
-.contentSection ul a:hover {
+#mainContentArea a:hover {
 	color: #000000;
 }
 /***** Main Container CSS End *****/
@@ -254,3 +255,23 @@ font-weight: normal;
 	text-align: center;
 }
 /***** Category Page CSS End *****/
+
+
+/***** Company Page CSS End *****/
+.mainColumn {width: 100%;}
+.sideline {
+	border:1px solid #000000;
+	margin: 25px 0px;
+	padding: 10px;
+}
+.addressLine {
+	margin: 0px 10px;
+}
+.aboutLinks {
+	list-style: none;
+	padding: 0px;
+}
+.aboutLinks a {
+	text-decoration: underline;
+}
+/***** Company Page CSS End *****/
