@@ -1,4 +1,4 @@
-/***** General CSS Start *****/
+/***** General Start *****/
 .clear {clear: both;}
 body {
 	margin:0px;
@@ -7,10 +7,10 @@ body {
 	min-width: 860px;
 }
 a {color: #000000;}
-/***** General CSS End *****/
+/***** General End *****/
 
 
-/***** appPreview CSS End *****/
+/***** appPreview Start *****/
 #appPreView {
     background: url("images/logo_bg.gif") repeat-x scroll center bottom #BC4902;
     border: 1px solid #000000;
@@ -28,10 +28,10 @@ a {color: #000000;}
     margin-top: 17px;
     text-align: center;
 }
-/***** appPreview CSS End *****/
+/***** appPreview End *****/
 
 
-/***** appNav CSS Start *****/
+/***** appNav Start *****/
 #appNav {
 	position:relative; 
 	height:1px; 
@@ -48,10 +48,10 @@ a {color: #000000;}
 	top:50px; 
 	right:10px;
 }
-/***** appNav CSS End *****/
+/***** appNav End *****/
 
 
-/***** Header CSS Start *****/
+/***** Header Start *****/
 .topMenu {
 	background: #000000; 
 	color:#ffffff; 
@@ -85,10 +85,10 @@ a {color: #000000;}
 	margin-left:6px;
 }
 .phonePaymentSection h4 {margin: 5px 0px;}
-/***** Header CSS End *****/
+/***** Header End *****/
 
 
-/***** Sidebar CSS Start *****/
+/***** Sidebar Start *****/
 .mainBody {display:table;}
 .sideBar, .container{display: table-cell;}
 .sideBar {
@@ -140,10 +140,10 @@ a {color: #000000;}
 	margin:15px auto;
 	display: block;
  }
-/***** Sidebar CSS End *****/
+/***** Sidebar End *****/
 
 
-/***** Footer CSS Start *****/
+/***** Footer Start *****/
 .footer {
 	background: #ffffff; 
 	border-top: 4px solid #75705E;
@@ -155,11 +155,11 @@ a {color: #000000;}
 .footer img {
 	margin: 5px 0px 0px 2px;
 }
-/***** Footer CSS End *****/
+/***** Footer End *****/
 
 
 
-/***** Main Container CSS Start *****/
+/***** Main Container Start *****/
 .container {
 	width:75%; 
 	background: url("images/containertop_bg.jpg") repeat-x #ffffff;
@@ -190,10 +190,10 @@ a {color: #000000;}
 #mainContentArea a:hover {
 	color: #000000;
 }
-/***** Main Container CSS End *****/
+/***** Main Container End *****/
 
 
-/***** Homepage CSS Start *****/
+/***** Homepage Start *****/
 #homepageTemplate p {margin:0px;}
 #mainContentArea .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
     background: none repeat scroll 0 0 #F68924;
@@ -203,16 +203,15 @@ a {color: #000000;}
     height: 34px;
     line-height: 34px;
 }
-
 #mainContentArea .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
     color: #922618;
 }
 #mainContentArea .ui-widget-content{
 	display: none;
 }
-/***** Homepage CSS End *****/
+/***** Homepage End *****/
 
-/***** Product List Template CSS Start *****/
+/***** Product List Template Start *****/
 .productList{
 	background: url("images/prodlisttemplate_bg.jpg");
 }
@@ -233,10 +232,10 @@ font-weight: normal;
 .prodListPrice {
 	font-size: 12px;
 }
-/***** Product List Template CSS End *****/
+/***** Product List Template End *****/
 
 
-/***** Product Page CSS Start *****/
+/***** Product Page Start *****/
 .productPage > .contentSection {
     width: 675px;
 }
@@ -265,19 +264,19 @@ font-weight: normal;
 .tabbedProductContentTD a {
 	color: #922618;
 }
-/***** Product Page CSS End *****/
+/***** Product Page End *****/
 
 
-/***** Category Page CSS Start *****/
+/***** Category Page Start *****/
 .catPageLongTitle {
 	width: 375px; 
 	margin: 0px auto;
 	text-align: center;
 }
-/***** Category Page CSS End *****/
+/***** Category Page End *****/
 
 
-/***** Cart Modal CSS Start *****/
+/***** Cart Modal Start *****/
 .cartSummaryTotalsContainer h2 {
 	font-size: 12px;
 }
@@ -288,10 +287,10 @@ font-weight: normal;
 .cartStuffContainer .productList > li {
     padding: 10px 0;
 }
-/***** Cart Modal CSS End *****/
+/***** Cart Modal End *****/
 
 
-/***** Company Page CSS End *****/
+/***** Company Page End *****/
 .mainColumn {width: 100%;}
 .sideline {
 	border:1px solid #000000;
@@ -308,4 +307,4 @@ font-weight: normal;
 .aboutLinks a {
 	text-decoration: underline;
 }
-/***** Company Page CSS End *****/
+/***** Company Page End *****/
