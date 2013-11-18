@@ -31,6 +31,26 @@ a {color: #000000;}
 /***** appPreview CSS End *****/
 
 
+/***** appNav CSS Start *****/
+#appNav {
+	position:relative; 
+	height:1px; 
+	overflow:visible; 
+	z-index:99;
+}
+#appNav .prodDetailPrevItemButton{
+	position:absolute; 
+	top:50px; 
+	right:75px;
+}
+#appNav .prodDetailNextItemButton{
+	position:absolute; 
+	top:50px; 
+	right:10px;
+}
+/***** appNav CSS End *****/
+
+
 /***** Header CSS Start *****/
 .topMenu {
 	background: #000000; 
