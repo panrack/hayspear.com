@@ -483,6 +483,7 @@ this will likely become more flexible in the future. ###
 <div class="contentSection">
 <table class='prodViewerContainer'>
 <tr>
+<ul class='noPadOrMargin fluidList breadcrumb clearfix' data-bind='var: session(session.recentCategories.0); format:breadcrumb; extension:store_navcats; loadsTemplate: breadcrumbTemplate;'></ul>
 	<td class='imageContainer'>
 
 <div onClick='app.ext.store_product.u.showPicsInModal({"pid":$(this).attr("data-pid")});' class='pointer clearfix'  data-bind='var:product(pid);format:assignAttribute; attribute:data-pid;'>
