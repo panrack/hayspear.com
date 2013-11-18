@@ -277,6 +277,20 @@ font-weight: normal;
 /***** Category Page CSS End *****/
 
 
+/***** Cart Modal CSS Start *****/
+.cartSummaryTotalsContainer h2 {
+	font-size: 12px;
+}
+.cartStuffContainer .productList {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 0 10px;
+}
+.cartStuffContainer .productList > li {
+    padding: 10px 0;
+}
+/***** Cart Modal CSS End *****/
+
+
 /***** Company Page CSS End *****/
 .mainColumn {width: 100%;}
 .sideline {
