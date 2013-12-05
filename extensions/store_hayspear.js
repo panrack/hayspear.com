@@ -34,7 +34,13 @@ var store_hayspear = function() {
 		init : {
 			onSuccess : function()	{
 				var r = false; //return false if extension won't load for some reason (account config, dependencies, etc).
-
+				
+				app.rq.push(['templateFunction','categoryTemplate','onCompletes',function(P) {
+					//run slideshow code
+					var $context = $(app.u.jqSelector('#',P.parentID));
+					
+					$('.catPageSlideshow', $context).cycle();
+					}]);
 				//if there is any functionality required for this extension to load, put it here. such as a check for async google, the FB object, etc. return false if dependencies are not present. don't check for other extensions.
 				r = true;
 
@@ -68,6 +74,10 @@ var store_hayspear = function() {
 			catPageSlideshow : function($tag, data) {
 				var imageList = data.value.split("images=")[1].split("\n")[0].split(",");
 				app.u.dump(imageList);
+				
+				for (var i=0;i<imageList.length;i++){
+					app.u.makeImage({"name":imageList[i],"w":"400","h":"200","b":"TTTTTT","class":"catPageSlideshow"});
+					}
 				
 			},
 			
