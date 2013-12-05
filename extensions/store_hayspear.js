@@ -69,6 +69,20 @@ var store_hayspear = function() {
 				var imageList = data.value.split("images=")[1].split("\n")[0].split(",");
 				app.u.dump(imageList);
 				
+			},
+			
+			catPageProdList : function($tag,data){
+				var path = data.value.split("SRC=LIST%3A%24")[1].split("&")[0];
+				path = "$"+path;
+				
+				var tagObj = {
+					"callback": function(rd){
+						$tag.anycontent({'templateID':data.bindData.templateID,'datapointer':rd.datapointer});
+					}
+				} 
+				
+				app.ext.store_navcats.calls.appNavcatDetail.init(path,tagObj,"mutable");
+				app.model.dispatchThis("mutable");
 			}
 
 			}, //renderFormats
