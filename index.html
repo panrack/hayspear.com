@@ -275,7 +275,9 @@ don't modify the 'data-templateid' unless you are changing template names and up
 	<img data-bind="var: category(%page.picture1); format: banner; editor: banner; height:200; width:400; extension: myRIA;" src='images/blank.gif' alt='' />
 
 	<h3 class="catPageLongTitle" data-bind="var: category(%page.title); format:wiki; wikiFormats:myRIA; editor: textarea;"></h3>
-
+	
+	<div data-bind="var:category(%page.dynimage); format:catPageSlideshow; extension:store_hayspear;"></div>
+	
 	<p data-bind="var: category(%page.description); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 	<p data-bind="var: category(%page.description2); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 	<p data-bind="var: category(%page.catdesc); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
