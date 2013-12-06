@@ -76,7 +76,7 @@ var store_hayspear = function() {
 				app.u.dump(imageList);
 				
 				for (var i=0;i<imageList.length;i++){
-					$tag.append(app.u.makeImage({"name":imageList[i],"w":"400","h":"200","b":"TTTTTT","class":"catPageSlideshow", "tag":"1"}));
+					$tag.append(app.u.makeImage({"name":imageList[i],"w":"400","h":"200","b":"TTTTTT","class":"catPageSlideshow", "tag":true}));
 					}
 				
 			},
