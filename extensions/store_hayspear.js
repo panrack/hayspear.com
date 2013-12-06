@@ -82,17 +82,28 @@ var store_hayspear = function() {
 			},
 			
 			catPageProdList : function($tag,data){
-				var path = data.value.split("SRC=LIST%3A%24")[1].split("&")[0];
-				path = "$"+path;
-				
-				var tagObj = {
-					"callback": function(rd){
-						$tag.anycontent({'templateID':data.bindData.templateID,'datapointer':rd.datapointer});
+				if(data.value.indexOf("SRC=LIST%3A%24") >= 0){	
+					var path = data.value.split("SRC=LIST%3A%24")[1].split("&")[0];
+					path = "$"+path;
+					
+					var tagObj = {
+						"callback": function(rd){
+							$tag.anycontent({'templateID':data.bindData.templateID,'datapointer':rd.datapointer});
+						}
+					} 
+					
+					app.ext.store_navcats.calls.appNavcatDetail.init(path,tagObj,"mutable");
+					app.model.dispatchThis("mutable");
 					}
-				} 
-				
-				app.ext.store_navcats.calls.appNavcatDetail.init(path,tagObj,"mutable");
-				app.model.dispatchThis("mutable");
+				else {
+					//There is no src list
+				}
+			},
+			
+			hideIfProdList : function($tag,data){
+				if(data.value.indexOf("SRC=LIST%3A%24") >= 0){
+					$tag.hide();
+				}
 			}
 
 			}, //renderFormats
