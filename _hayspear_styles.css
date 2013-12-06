@@ -212,13 +212,16 @@ a {color: #000000;}
 /***** Homepage End *****/
 
 /***** Product List Template Start *****/
+.mpControlsPagination.ui-state-active.ui-corner-all.floatRight.paging.pointer {
+    margin: 7px 0;
+}
 .productList{
 	background: url("images/prodlisttemplate_bg.jpg");
 }
 .productList > li {
-    height: 139px;
+    height: 135px;
 	margin: 0px;
-	padding: 0px 10px;
+	padding: 2px 10px;
     position: relative;
     width: 31%;
 }
@@ -317,3 +320,10 @@ font-weight: normal;
 	text-decoration: underline;
 }
 /***** Company Page End *****/
+
+
+/***** Search Results Start *****/
+.ui-widget.ui-widget-header.resultsHeader.clearfix.ui-corner-top.hideInMinimalMode {
+  border-radius: 20px 0 0;
+}
+/***** Search Results End *****/
