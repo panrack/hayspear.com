@@ -298,6 +298,18 @@ font-weight: normal;
 
 
 /***** Cart Modal Start *****/
+.cartSummaryContainer {
+    width: 200px;
+	float:left;
+}
+.cartIconLogos{
+	width:145px;
+	float:right;
+	text-align:center;
+}
+.cartIconLogos img {
+	padding:5px 0px;
+}
 .cartSummaryTotalsContainer h2 {
 	font-size: 12px;
 }
