@@ -97,7 +97,7 @@ app.u.loadScript(app.vars.baseURL+"app-quickstart-init.js");
 			<li><a onClick="return showContent('customer',{'show':'myaccount'});">Sign In</a></li>
 			<li><a onClick="return showContent('cart',{});">View Cart</a></li>
 			<li><a onClick="return showContent('category',{'navcat':'.installation_guides'});">Informational Links</a></li>
-			<li><a>Printer-Friendly Catalog</a></li>
+			<li><a onClick="return showContent('category',{'navcat':'.zb_printable_hay_bale_spear_attachment_catalogue'})">Printer-Friendly Catalog</a></li>
 		</ul>
 		<a class="floatRight cartSection" onClick="return showContent('cart',{});" class='pointer'>
 			<span class="cartText">Shopping Cart:</span>
@@ -292,6 +292,37 @@ don't modify the 'data-templateid' unless you are changing template names and up
 </div>
 
 
+</div>
+
+<div id='categoryTemplateInstallGuides' class='loadingBG categoryTemplate'>
+	<div data-bind='var: category(%page.page_title); format:hideIfSet;'>
+		<h2 class="pageTitleGrayBG" data-bind='var:category(pretty); format:catText; extension:myRIA;'></h2>
+	</div>
+	<div class="displayNone" data-bind='var: category(%page.page_title); format:showIfSet;'>
+		<h2 class="pageTitleGrayBG" data-bind="var: category(%page.page_title); format: text; editor: text;"></h2>
+	</div>
+<div class="contentSection">
+	
+	<ul class='breadcrumb clearfix noPadOrMargin fluidList' data-bind='var: category(path); format:breadcrumb; extension:store_navcats; loadsTemplate: breadcrumbTemplate;'></ul>
+	<img data-bind="var: category(%page.picture1); format: banner; editor: banner; height:200; width:400; extension: myRIA;" src='images/blank.gif' alt='' />
+
+	
+	<div class="catPageSlideshow" data-bind="var:category(%page.dynimage); format:catPageSlideshow; extension:store_hayspear;"></div>
+	<h3 class="catPageLongTitle" data-bind="var: category(%page.title); format:wiki; wikiFormats:myRIA; editor: textarea;"></h3>
+	
+	<p data-bind="var: category(%page.description); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
+	<p data-bind="var: category(%page.description2); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
+	<p data-bind="var: category(%page.catdesc); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
+
+</div>
+</div>
+
+
+<div id='categoryTemplatePrintable' class='loadingBG categoryTemplate'>
+	<h2 class="pageTitleGrayBG">Printer-Friendly Catalog</h2>
+	<div class="contentSection">
+		<p>This is where the printable catalogs will go.</p>
+	</div>
 </div>
 
 
