@@ -82,7 +82,7 @@ a {color: #000000;}
 }
 .phonePaymentSection {
 	float:right; 
-	margin-left:6px;
+	margin:0px 6px;
 }
 .phonePaymentSection h4 {margin: 5px 0px;}
 /***** Header End *****/
