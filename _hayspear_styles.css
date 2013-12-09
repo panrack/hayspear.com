@@ -302,6 +302,13 @@ font-weight: normal;
     width: 200px;
 	float:left;
 }
+.cartSummaryTotalsContainer h2 {
+	font-size: 12px;
+}
+.checkoutButton.ui-button.ui-button-text.ui-state-default.ui-corner-all {
+	border: none;
+	background: none;
+}
 .cartIconLogos{
 	width:145px;
 	float:right;
@@ -309,9 +316,6 @@ font-weight: normal;
 }
 .cartIconLogos img {
 	padding:5px 0px;
-}
-.cartSummaryTotalsContainer h2 {
-	font-size: 12px;
 }
 .cartStuffContainer .productList {
     background: none repeat scroll 0 0 #FFFFFF;
