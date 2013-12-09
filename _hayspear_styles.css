@@ -283,6 +283,9 @@ font-weight: normal;
 
 
 /***** Category Page Start *****/
+.catName a {
+    text-decoration: underline;
+}
 .catPageLongTitle {
 	width: 375px; 
 	margin: 0px auto;
