@@ -334,7 +334,7 @@ the defaultVar on prodName & image is for promotions, which have a 'description'
 
 <!-- the table is here in an attempt to address a IE8 specific bug. the button jumps around the page, but only when returning from paypal. odd. -->
 <table class='noPadOrMargin'><tr><td>
-	<button data-app-event="orderCreate|execCartOrderCreate">
+	<button class="placeOrderButton" data-app-event="orderCreate|execCartOrderCreate">
 		Place Order
 	</button>
 </td></tr></table>
@@ -409,7 +409,7 @@ do NOT change the input name or id or checkout will likely break.
 
 <!-- used after a successful checkout.  -->
 
-<div id='chkoutCompletedTemplate' class='checkoutSuccess contentSection'>
+<div id='chkoutCompletedTemplate' class='checkoutSuccess'>
 
 	<div class='floatRight ocmThirdParty'>
 		<h2>What next?</h2>
@@ -456,7 +456,7 @@ do NOT change the input name or id or checkout will likely break.
 	
 	
 	<!-- <h2 data-bind='var:order(bill/firstname);format:text; pretext:Shipping Status: ;'></h2> -->
-	
+	<h3 data-bind='var: order(orderid); format:text; pretext:Your order id is ;'></h3>
 	<h5 class='orderTotal' data-bind='var:order(order/sum/order_total);format:money; currencySign: $;  hideZero:false; pretext:Order Total: ;'></h5>
 	<h5 class='balanceDue' data-bind='var:order(order/sum/balance_due_total);format:money; currencySign: $;  hideZero:false; pretext:Balance Due: ;'></h5>
 	</hgroup>

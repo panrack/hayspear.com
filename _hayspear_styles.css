@@ -173,7 +173,7 @@ a {color: #000000;}
 .container #mainContentArea {
     background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 20px 0 0 0;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 .pageTitleGrayBG{
     background: none repeat scroll 0 0 #75705E;
@@ -209,8 +209,8 @@ a {color: #000000;}
 #mainContentArea .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
     color: #922618;
 }
-#mainContentArea .ui-widget-content{
-	display: none;
+.ddUlMenu li ul{
+	display:none;
 }
 /***** Homepage End *****/
 
@@ -359,5 +359,17 @@ font-weight: normal;
 /***** Checkout Start *****/
 .ui-widget.ui-widget-content.ui-corner-all.ui-widget-header{
 	background:#ffffff;
+}
+#mainContentArea .placeOrderButton.ui-state-highlight.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only {
+    background: none repeat scroll 0 0 #E46F02;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+#mainContentArea .placeOrderButton.ui-state-highlight.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only:hover {
+    color: #922618;
+}
+#mainContentArea .writeReview.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only{
+	width: 115px;
 }
 /***** Checkout End *****/
