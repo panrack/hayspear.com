@@ -7,7 +7,7 @@ The chkout prefix is reserved for checkout.
 
 item list and summary are separate just to give more control over location.
 -->
-<div id='checkoutTemplate' class='checkoutFormContainer' data-app-role='checkout'>
+<div id='checkoutTemplate' class='checkoutFormContainer contentSection' data-app-role='checkout'>
 
 	<form action='#'>
 	<input type='hidden' name='bill/shortcut' data-bind="var: cart(bill/shortcut); format:popVal;" />
@@ -409,7 +409,7 @@ do NOT change the input name or id or checkout will likely break.
 
 <!-- used after a successful checkout.  -->
 
-<div id='chkoutCompletedTemplate' class='checkoutSuccess'>
+<div id='chkoutCompletedTemplate' class='checkoutSuccess pageTitleGrayBG'>
 
 	<div class='floatRight ocmThirdParty'>
 		<h2>What next?</h2>
