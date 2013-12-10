@@ -275,7 +275,6 @@ don't modify the 'data-templateid' unless you are changing template names and up
 <div class="contentSection">
 	
 	<ul class='breadcrumb clearfix noPadOrMargin fluidList' data-bind='var: category(path); format:breadcrumb; extension:store_navcats; loadsTemplate: breadcrumbTemplate;'></ul>
-	<ul data-bind="var: category(@subcategoryDetail); format: categoryList; extension: store_navcats; loadsTemplate: categoryListTemplate; detail:max;" class='listStyleNone clearfix noPadOrMargin categoryList'></ul><!-- outputs a list of subcategories -->
 
 	<img data-bind="var: category(%page.picture1); format: banner; editor: banner; height:200; width:400; extension: myRIA;" src='images/blank.gif' alt='' />
 
@@ -287,6 +286,10 @@ don't modify the 'data-templateid' unless you are changing template names and up
 	<p data-bind="var: category(%page.description2); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 	<p data-bind="var: category(%page.catdesc); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 
+	<div class="displayNone marginBottom" data-bind="var: category(@subcategoryDetail); format:showIfSet;">
+		<div class="subCategoryName">Categories for <span data-bind='var:category(pretty); format:catText; extension:myRIA;'></span></div>
+		<ul data-bind="var: category(@subcategoryDetail); format: categoryList; extension: store_navcats; loadsTemplate: categoryListTemplate; detail:max;" class='listStyleNone clearfix noPadOrMargin categoryList'></ul><!-- outputs a list of subcategories -->
+	</div>
 
 	<div data-bind="var: category(%page.prodlist); format: catPageProdList; extension: store_hayspear;templateID:catPageProdList;"></div>
 	<div data-bind="var: category(%page.prodlist); format: hideIfProdList; extension:store_hayspear;">
