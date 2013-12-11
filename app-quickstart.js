@@ -2716,7 +2716,7 @@ buyer to 'take with them' as they move between  pages.
 					else if(catSafeID == zGlobals.appSettings.rootcat || infoObj.pageType == 'homepage')	{
 						infoObj.templateID = 'homepageTemplate'
 						}
-					else if(catSafeID == '.installation_guides'){
+					else if(catSafeID == '.hayspear.z_informational_links'){
 						infoObj.templateID = 'categoryTemplateInstallGuides';
 						}
 					else if(catSafeID == '.hayspear.zb_printable_hay_bale_spear_attachment_catalogue'){
