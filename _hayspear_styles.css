@@ -399,3 +399,18 @@ font-weight: normal;
     text-decoration: none;
 }
 /***** Printable Page End *****/
+
+
+/***** Customer Pages Start *****/
+.mainColumn .contentSection {
+	width:76%;
+	padding:5px 1%;
+}
+.addressTitle {
+	line-height:35px;
+}
+#myaccountArticle address {
+    width: 300px;
+	padding:5px;
+}
+/***** Customer Pages End *****/

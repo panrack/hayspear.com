@@ -957,7 +957,7 @@ subscribeListsArticle is used for authenticated buyers
 -->
 		<div id='newsletterArticle' class='displayNone textContentArea'>
 			<h1 class="pageTitleGrayBG">Subscribe to our Newsletter and Save!</h1>
-			<div data-bind="format:loadsTemplate; loadsTemplate:subscribeFormTemplate;"></div>
+			<div class="contentSection" data-bind="format:loadsTemplate; loadsTemplate:subscribeFormTemplate;"></div>
 		</div>
 
 		<div id='subscriberListsArticle' class='displayNone textContentArea'>
@@ -976,16 +976,16 @@ subscribeListsArticle is used for authenticated buyers
 
 			<section class="contentSection">
 
-<div class='billAddressContainer' data-app-role='addressContainer' data-app-addresstype='bill'>
-	<div class='marginBottom'>
+<div class='billAddressContainer marginBottom' data-app-role='addressContainer' data-app-addresstype='bill'>
+	<div class='addressTitle'>
 		<button class='floatRight' data-app-event='myRIA|showBuyerAddressAdd'>Add New Billing Address</button>
 		<h5>Billing Address(es)</h5>
 	</div>
 	<div class='billAddresses' data-bind="var: buyer(@bill); format:processList; loadsTemplate:billAddressTemplate;"></div>
 </div>
 
-<div class='shipAddressContainer' data-app-role='addressContainer' data-app-addresstype='ship'>
-	<div class='marginBottom'>
+<div class='shipAddressContainer marginBottom' data-app-role='addressContainer' data-app-addresstype='ship'>
+	<div class='addressTitle'>
 		<button class='floatRight' data-app-event='myRIA|showBuyerAddressAdd'>Add New Shipping Address</button>
 		<h5>Shipping Address(es)</h5>
 	</div>
@@ -1001,19 +1001,19 @@ subscribeListsArticle is used for authenticated buyers
 
 		<div id='ordersArticle' class='displayNone textContentArea'>
 			<h1 class="pageTitleGrayBG">Order History</h1>
-			<div data-bind="var: orders(@orders); format:processList; loadsTemplate:orderLineItemTemplate;" data-app-role='orderList' class='ui-accordion ui-widget ui-helper-reset ui-accordion-icons '></div>
+			<div data-bind="var: orders(@orders); format:processList; loadsTemplate:orderLineItemTemplate;" data-app-role='orderList' class='ui-accordion ui-widget ui-helper-reset ui-accordion-icons contentSection'></div>
 		</div>
 
 
 		<div id='invoiceArticle' class='displayNone textContentArea'>
-			<div data-bind="format:loadsTemplate; loadsTemplate: invoiceTemplate; useParentData:true;"></div>
+			<div class="contentSection" data-bind="format:loadsTemplate; loadsTemplate: invoiceTemplate; useParentData:true;"></div>
 		</div>
 
 
 
 		<div id='changepasswordArticle' class='displayNone textContentArea'>
 			<h1 class="pageTitleGrayBG">Change Password</h1>
-			<div id='changepasswordContainer'>
+			<div class="contentSection" id='changepasswordContainer'>
 
 <form action='#' id='changePasswordForm' name='changePasswordForm' onSubmit="app.ext.store_crm.u.handleChangePassword($(this),{'callback':'showMessaging','message':'Thank you, your password has been changed','jqObj':$(this).parent()}); return false">
 <fieldset class='borderNone'>
@@ -1029,7 +1029,7 @@ subscribeListsArticle is used for authenticated buyers
 
 		<div id='listsArticle' class='displayNone textContentArea'>
 			<h1 class="pageTitleGrayBG">List Manager</h1>
-			<div id='listsContainer' class='prodlist loadingBG'></div>
+			<div id='listsContainer' class='prodlist loadingBG contentSection'></div>
 
 			<div id='listEditorContainer' class='displayNone loadingBG'></div><!-- editor for a given list gets added here -->
 
