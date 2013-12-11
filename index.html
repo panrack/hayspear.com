@@ -304,13 +304,16 @@ don't modify the 'data-templateid' unless you are changing template names and up
 </div>
 
 <div id='categoryTemplatePrintable' class='loadingBG categoryTemplate contentSection'>
-	<div data-bind='var: category(%page.page_title); format:hideIfSet;'>
-		<h2 class="pageTitlePrintable" data-bind='var:category(pretty); format:catText; extension:myRIA;'></h2>
+	<div class="floatLeft">
+		<div data-bind='var: category(%page.page_title); format:hideIfSet;'>
+			<h2 class="pageTitlePrintable" data-bind='var:category(pretty); format:catText; extension:myRIA;'></h2>
+		</div>
+		<div class="displayNone" data-bind='var: category(%page.page_title); format:showIfSet;'>
+			<h2 class="pageTitlePrintable" data-bind="var: category(%page.page_title); format: text; editor: text;"></h2>
+		</div>
 	</div>
-	<div class="displayNone" data-bind='var: category(%page.page_title); format:showIfSet;'>
-		<h2 class="pageTitlePrintable" data-bind="var: category(%page.page_title); format: text; editor: text;"></h2>
-	</div>
-	
+	<a class="floatRight" href="#" onClick="app.u.printByjqObj($(this).parent().parent().parent());">Print this page</a>
+	<div class="clear"></div>
 	<p data-bind="var: category(%page.description); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 	<div data-bind='var: category(%page.description); format:hideIfSet;'>
 		<p data-bind="var: category(%page.description2); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
