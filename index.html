@@ -273,8 +273,9 @@ don't modify the 'data-templateid' unless you are changing template names and up
 		<h2 class="pageTitleGrayBG" data-bind="var: category(%page.page_title); format: text; editor: text;"></h2>
 	</div>
 <div class="contentSection">
-	
-	<ul class='breadcrumb clearfix noPadOrMargin fluidList' data-bind='var: category(path); format:breadcrumb; extension:store_navcats; loadsTemplate: breadcrumbTemplate;'></ul>
+	<ul class='breadcrumb clearfix noPadOrMargin fluidList floatLeft' data-bind='var: category(path); format:breadcrumb; extension:store_navcats; loadsTemplate: breadcrumbTemplate;'></ul>
+	<a class="floatRight" href="#" data-bind="var:category(path);format:assignAttribute; attribute:data-navcat;" onClick="return showContent('category',{'navcat':$(this).attr('data-navcat'), 'templateID':'categoryTemplatePrintable','performTransition':true});">Click here for a printer friendly version</a>
+	<div class="clear"></div>
 	<div class="displayNone marginBottom" data-bind="var: category(@subcategoryDetail); format:showIfSet;">
 		<div class="subCategoryName"><span data-bind='var:category(pretty); format:catText; extension:myRIA;'></span> Categories</div>
 		<ul data-bind="var: category(@subcategoryDetail); format: categoryList; extension: store_navcats; loadsTemplate: categoryListTemplate; detail:max;" class='listStyleNone clearfix noPadOrMargin categoryList'></ul><!-- outputs a list of subcategories -->
