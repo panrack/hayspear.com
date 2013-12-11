@@ -41,6 +41,37 @@ var store_hayspear = function() {
 					
 					$('.catPageSlideshow', $context).cycle();
 					}]);
+				
+				app.rq.push(['templateFunction','categoryTemplateCatalog','onCompletes',function(P) {
+					var $context = $(app.u.jqSelector('#',P.parentID));
+					
+					var $printLinkList = $('.printLinkList',$context);
+					var paths = app.data.appCategoryList['@paths'];
+					
+					for (var i=0; i<paths.length;i++){
+						if (paths[i]!= ".hayspear.zb_printable_hay_bale_spear_attachment_catalogue" && paths[i]!=".hayspear.z_informational_links" && paths[i].indexOf(".hayspear.")==0){
+							var $link = $('<li></li>');
+							$printLinkList.append($link);
+							var tagObj = {
+								"callback" : function(rd){
+									var data = app.data[rd.datapointer];
+									if(data.pretty.indexOf('!')!=0){
+										var $a = $('<a href="#">'+data.pretty+'</a>');
+										$a.on('click', function(){
+											showContent('category',{'navcat':data.path,'templateID':'categoryTemplatePrintable'})
+										});
+										$link.append($a);
+										}
+									else{
+										$link.remove();
+									}
+									}
+								};
+							app.ext.store_navcats.calls.appNavcatDetail.init(paths[i],tagObj,"mutable");
+							}
+						}
+					app.model.dispatchThis("mutable");
+				}]);
 				//if there is any functionality required for this extension to load, put it here. such as a check for async google, the FB object, etc. return false if dependencies are not present. don't check for other extensions.
 				r = true;
 
