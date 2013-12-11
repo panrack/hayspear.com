@@ -1,0 +1,45 @@
+.ui-widget-overlay {
+    background: none repeat scroll 0 0 #333333;
+    height: 100%;
+    left: 0;
+    opacity: 0.45;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.redirectModal.ui-widget-content {
+    border-radius: 0;
+    z-index: 100;
+}
+.redirectToSiteApp.ui-dialog-content.ui-widget-content {
+    background: url("images/logo_bg.gif") repeat-x scroll center bottom #BC4902;
+    padding: 0 20px 20px;
+	color:#000000;
+}
+.ui-button.ui-state-default.ui-button-text-only {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px;
+}
+.ui-button.ui-state-default.ui-button-text-only:hover {
+    color: #922618;
+}
+.redirectModal .ui-dialog-titlebar-close, .redirectModal .ui-dialog-titlebar {
+    display: none;
+}
+.redirectToSiteApp {
+    text-align: center;
+}
+.autoRedirectToSiteApp {
+    text-align: center;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.stopFutureRedirectMessage {
+    display: none;
+}
