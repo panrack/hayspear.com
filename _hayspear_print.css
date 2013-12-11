@@ -1,0 +1,51 @@
+/***** Printable Page Start *****/
+.displayNonePrintPage {
+	display:none;
+}
+a {
+	color: #922618;
+}
+.listStyleNone, .listStyleNone li {
+    list-style: none outside none;
+}
+.noPadOrMargin {
+    margin: 0;
+    padding: 0;
+}
+.fluidList li {
+    display: inline-block;
+    float: left;
+    margin: 12px;
+    padding: 0;
+}
+.alignCenter {
+	text-align:center;
+}
+.prodListName {
+    font-family: arial;
+    font-size: 12px;
+    font-weight: normal;
+}
+.prodListPrice {
+    font-size: 12px;
+}
+.pageTitlePrintable {
+    color: #000000;
+    font-size: 16px;
+}
+.productListPrintable {
+    border-top: 1px solid #000000;
+    padding-top: 3px;
+}
+.productListPrintable > li {
+    height: 140px;
+	margin: 0px;
+	padding: 2px 10px;
+    position: relative;
+    width: 29%;
+}
+.productListPrintable .prodListName {
+    color: #000000;
+    text-decoration: none;
+}
+/***** Printable Page End *****/

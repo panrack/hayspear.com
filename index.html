@@ -313,7 +313,7 @@ don't modify the 'data-templateid' unless you are changing template names and up
 			<h2 class="pageTitlePrintable" data-bind="var: category(%page.page_title); format: text; editor: text;"></h2>
 		</div>
 	</div>
-	<a class="floatRight" href="#" onClick="app.u.printByjqObj($(this).parent().parent().parent());">Print this page</a>
+	<a class="floatRight displayNonePrintPage" href="#" onClick="app.u.printByjqObj($(this).parent());">Print this page</a>
 	<div class="clear"></div>
 	<p data-bind="var: category(%page.description); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 	<div data-bind='var: category(%page.description); format:hideIfSet;'>
