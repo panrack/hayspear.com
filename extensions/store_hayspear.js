@@ -59,7 +59,7 @@ var store_hayspear = function() {
 										if(data.pretty.indexOf('!')!=0){
 											var $a = $('<a href="#">'+data.pretty+'</a>');
 											$a.on('click', function(){
-												showContent('category',{'navcat':data.path,'templateID':'categoryTemplatePrintable'})
+												return showContent('category',{'navcat':data.path,'templateID':'categoryTemplatePrintable'})
 											});
 											$link.append($a);
 											}
