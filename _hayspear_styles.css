@@ -37,9 +37,6 @@ a {color: #000000;}
 /***** appNav Start *****/
 #appNav {
 	position:relative; 
-	height:1px; 
-	overflow:visible; 
-	z-index:99;
 }
 #appNav .prodDetailPrevItemButton{
 	position:absolute; 
@@ -92,10 +89,10 @@ a {color: #000000;}
 
 
 /***** Sidebar Start *****/
-.mainBody {display:table;}
 .sideBar, .container{display: table-cell;}
 .sideBar {
 	width:25%;
+	float:left;
 	height: 100%;
 	background: url("images/left_bg.gif") repeat-y scroll right top #000000;
  }
@@ -131,6 +128,7 @@ a {color: #000000;}
 	padding: 3px 0;
 	font-size: 13px;
 	font-weight: bold;
+	word-wrap:break-word;
 }
 .sideBarCategories  li:hover{
 	color: #000000;
@@ -171,12 +169,13 @@ a {color: #000000;}
 /***** Main Container Start *****/
 .container {
 	width:75%; 
+	float:right;
 	background: url("images/containertop_bg.jpg") repeat-x #ffffff;
 }
 .container #mainContentArea {
     background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 20px 0 0 0;
-    margin-top: 2px;
+    margin-top: 15px;
 	min-height:75px;
 }
 .pageTitleGrayBG{
