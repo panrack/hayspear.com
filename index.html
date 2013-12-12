@@ -287,10 +287,10 @@ don't modify the 'data-templateid' unless you are changing template names and up
 	<div class="catPageSlideshow" data-bind="var:category(%page.dynimage); format:catPageSlideshow; extension:store_hayspear;"></div>
 	<h3 class="catPageLongTitle" data-bind="var: category(%page.title); format:wiki; wikiFormats:myRIA; editor: textarea;"></h3>
 	
-	<p data-bind="var: category(%page.description); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
-	<div data-bind='var: category(%page.description); format:hideIfSet;'>
-		<p data-bind="var: category(%page.description2); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
+	<div data-bind='var: category(%page.description2); format:hideIfSet;'>
+		<p data-bind="var: category(%page.description); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 	</div>
+	<p data-bind="var: category(%page.description2); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 	<p data-bind="var: category(%page.catdesc); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 
 
