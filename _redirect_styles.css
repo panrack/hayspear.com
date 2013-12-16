@@ -34,6 +34,11 @@
 .autoRedirectToSiteApp {
     text-align: center;
 }
+.autoRedirectToSiteApp.ui-dialog-content.ui-widget-content {
+    background: url("images/logo_bg.gif") repeat-x scroll center bottom #BC4902;
+    padding: 0 20px 20px;
+	color:#000000;
+}
 .floatLeft {
     float: left;
 }
