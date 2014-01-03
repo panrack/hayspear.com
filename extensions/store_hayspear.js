@@ -74,7 +74,9 @@ var store_hayspear = function() {
 							$('.printLinkList').addClass('listGenerated');
 						}	
 						app.model.dispatchThis("mutable");
-				}]);
+					}]);
+				
+				app.ext.store_hayspear.u.initVariations();
 				//if there is any functionality required for this extension to load, put it here. such as a check for async google, the FB object, etc. return false if dependencies are not present. don't check for other extensions.
 				r = true;
 
@@ -146,7 +148,14 @@ var store_hayspear = function() {
 //utilities are typically functions that are exected by an event or action.
 //any functions that are recycled should be here.
 		u : {
-		
+			initVariations : function(){
+				if(handlePogs){
+					$.extend(handlePogs.prototype,app.ext.store_hayspear.variations);
+					} 
+				else {
+				   setTimeout(function(){app.ext.myExt.u.initVariations();}, 250);
+					}
+				}
 			}, //u [utilities]
 
 //app-events are added to an element through data-app-event="extensionName|functionName"
@@ -155,7 +164,31 @@ var store_hayspear = function() {
 //while no naming convention is stricly forced, 
 //when adding an event, be sure to do off('click.appEventName') and then on('click.appEventName') to ensure the same event is not double-added if app events were to get run again over the same template.
 		e : {
-			} //e [app Events]
+			}, //e [app Events]
+		
+		
+		variations : {
+			renderOptionRADIOwithPrice: function(pog)	{
+				app.u.dump(pog);
+				var pogid = pog.id;
+
+				var $parentDiv = $("<span \/>").addClass('labelsAsBreaks');
+				
+			//display ? with hint in hidden div IF ghint is set
+				if(pog['ghint']) {$parentDiv.append(pogs.showHintIcon(pogid,pog['ghint']))}
+				var i = 0;
+				var len = pog['@options'].length;
+				while (i < len) {
+					$parentDiv.append($("<label \/>").append($('<input>').attr({type: "radio", name: pogid, value: pog['@options'][i]['v']})).append(pog['@options'][i]['prompt']).append(" "+app.u.formatMoney(pog['@options'][i].p, '$',2)));
+					i++;
+					}
+				return $parentDiv;
+				},
+			
+			xinit : function(){
+				this.addHandler("type","radio","renderOptionRADIOwithPrice");
+				}
+			}
 		} //r object.
 	return r;
 	}
