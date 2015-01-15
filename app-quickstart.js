@@ -1451,7 +1451,7 @@ P.listID (buyer list id)
 					}
 				app.rq.push = app.u.loadResourceFile; //reassign push function to auto-add the resource.
 				if(typeof infoObj != 'object')	{infoObj = {}}
-				infoObj = this.detectRelevantInfoToPage(window.location.href); 
+				infoObj = this.detectRelevantInfoToPage(window.location.hostname); 
 				infoObj.back = 0; //skip adding a pushState on initial page load.
 //getParams wants string to start w/ ? but doesn't need/want all the domain url crap.
 infoObj.uriParams = {};
@@ -1722,7 +1722,16 @@ if(ps.indexOf('?') >= 1)	{
 					r.pageType = 'homepage';
 					}
 //the url in the domain may or may not have a slash at the end. Check for both
-				else if(url == zGlobals.appSettings.http_app_url || url+"/" == zGlobals.appSettings.http_app_url || url == zGlobals.appSettings.https_app_url || url+"/" == zGlobals.appSettings.https_app_url)	{
+				else if(
+					"http://" + url == zGlobals.appSettings.http_app_url || 
+					"http://" + url+"/" == zGlobals.appSettings.http_app_url || 
+					"https://" + url == zGlobals.appSettings.http_app_url || 
+					"https://" + url+"/" == zGlobals.appSettings.http_app_url || 
+					"http://" + url == zGlobals.appSettings.https_app_url || 
+					"http://" + url+"/" == zGlobals.appSettings.https_app_url || 
+					"https://" + url == zGlobals.appSettings.https_app_url || 
+					"https://" + url+"/" == zGlobals.appSettings.https_app_url || 
+					)	{
 					r.pageType = 'homepage'
 					r.navcat = zGlobals.appSettings.rootcat; //left with category.safe.id or category.safe.id/
 					}
