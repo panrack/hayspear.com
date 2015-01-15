@@ -1730,7 +1730,7 @@ if(ps.indexOf('?') >= 1)	{
 					"http://" + url == zGlobals.appSettings.https_app_url || 
 					"http://" + url+"/" == zGlobals.appSettings.https_app_url || 
 					"https://" + url == zGlobals.appSettings.https_app_url || 
-					"https://" + url+"/" == zGlobals.appSettings.https_app_url || 
+					"https://" + url+"/" == zGlobals.appSettings.https_app_url
 					)	{
 					r.pageType = 'homepage'
 					r.navcat = zGlobals.appSettings.rootcat; //left with category.safe.id or category.safe.id/
