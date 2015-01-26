@@ -1451,7 +1451,7 @@ P.listID (buyer list id)
 					}
 				app.rq.push = app.u.loadResourceFile; //reassign push function to auto-add the resource.
 				if(typeof infoObj != 'object')	{infoObj = {}}
-				infoObj = this.detectRelevantInfoToPage(window.location.hostname); 
+				infoObj = this.detectRelevantInfoToPage(window.location.href); 
 				infoObj.back = 0; //skip adding a pushState on initial page load.
 //getParams wants string to start w/ ? but doesn't need/want all the domain url crap.
 infoObj.uriParams = {};
@@ -1668,16 +1668,16 @@ if(ps.indexOf('?') >= 1)	{
 // if no page content can be determined based on the url, the hash is examined and if appropriately formed, used (ex: #company?show=contact or #category?navcat=.something)
 // should be renamed getPageInfoFromURL
 			detectRelevantInfoToPage : function(URL)	{
-				app.u.dump("BEGIN myRIA.u.detectRelevantInfoToPage. url: "+URL);
+//				app.u.dump("BEGIN myRIA.u.detectRelevantInfoToPage. url: "+URL);
 				var r = {}; //what is returned. r.pageInfo and r.navcat or r.show or r.pid
-				var url = URL; //leave original intact.
+				var url = URL.split('//')[1]; //leave original intact.
 				var hashObj;
 				if(url.indexOf('#') > -1)	{
 					var tmp = url.split("#");
 					url = tmp[0]; //strip off everything after hash (#)
 					hashObj = this.getPageInfoFromHash(tmp[1]); //will be an object if the hash was a valid pageInfo anchor. otherwise false.
 					}
-				dump(url);
+
 				if(url.indexOf('?') > -1) {
 					var tmp = url.split('?')[1];
 					r.uriParams = tmp; //a simple string of uri params. used to add back onto uri in pushState.
